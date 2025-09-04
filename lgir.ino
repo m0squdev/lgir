@@ -109,7 +109,6 @@ void setup() {
   Serial.println(" ms to load menus");
   long brightnessSetupMillis = millis();
   while (millis() - brightnessSetupMillis < DELAY_SETUP) {
-    int encoderPosition = encoder.read();
     if (digitalRead(PIN_SW) == LOW) {
       selectBrightnessEntry();
       break;
